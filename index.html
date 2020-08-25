@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>יתרות חוב</title>
+    <script rel="script" type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body onload="loading()">
+
+<!-- Pie Chart -->
+<div class="container">
+    <h1>פילוח החובות באחוזים</h1>
+    <br>
+    <div id="chartContainer">
+        <!--here the chart will be defined by js-->
+    </div>
+</div>
+
+<!-- Table -->
+<div class="container">
+    <h1>טבלת חובות הלקוחות</h1>
+    <br>
+    <table class="table table-condensed table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>סכום החוב</th>
+            <th>שם משפחה</th>
+            <th>שם פרטי</th>
+        </tr>
+        </thead>
+        <tbody id="customersTable">
+        <!--here the table will be filled by js-->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">פרטי לקוח</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="col-sm-10">
+                        <h3>שם פרטי</h3>
+                        <text class="form-control form-control-sm" id="fName"></text>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3>שם משפחה</h3>
+                        <text class="form-control form-control-sm" id="lName"></text>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3>מגדר</h3>
+                        <text class="form-control form-control-sm" id="gender"></text>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3>מספר לקוח</h3>
+                        <text class="form-control form-control-sm" id="userID"></text>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3>יתרת חוב</h3>
+                        <input type="number" class="form-control form-control-sm" id="total">
+                    </div>
+                    <br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="update()">שמור שינויים</button>
+                <button type="button" class="btn btn-secondary" id="btnClose" data-dismiss="modal">סגור</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
