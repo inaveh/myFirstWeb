@@ -5,6 +5,6 @@ https://our-customers-table.000webhostapp.com/
 
 
 
-![Alt text](https://raw.githubusercontent.com/inaveh/myFirstWeb/master/p1.jpg)
-![Alt text](https://raw.githubusercontent.com/inaveh/myFirstWeb/master/p2.jpg)
+![Alt text](https://raw.githubusercontent.com/inaveh/myFirstWeb/p1.jpg)
+![Alt text](https://raw.githubusercontent.com/inaveh/myFirstWeb/p2.jpg)
 ![Alt text](https://raw.githubusercontent.com/inaveh/miniProject/master/units.jpg)
